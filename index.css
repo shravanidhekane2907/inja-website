@@ -1,0 +1,44 @@
+/* Navigation Bar Styles */
+nav {
+    background-color: #16a34a; /* Tailwind green-600 */
+    color: #fff;
+    padding: 1rem 0;
+    height: 80px; /* Fixed height for the navigation bar */
+    display: flex;
+}
+nav h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 1rem; /* Space between logo and title */
+}
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: text-decoration 0.2s;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #16a34a; /* Tailwind green-600 */
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+footer a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+footer a:hover {
+    color: #bbf7d0; /* Tailwind green-200 */
+}
