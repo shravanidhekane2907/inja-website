@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <style>
+            .campaign-img {
+                width: 100%;
+                max-width: 600px;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 0.5rem;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+                margin: 0 auto;
+                display: block;
+               
+            }
+            .tree-img {
+                width: 100%;
+                max-width: 550px;
+                height: 350px;
+                object-fit: cover;
+                border-radius: 0.5rem;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+                margin: 0 auto;
+                display: block;
+            }
+            .center-text {
+                text-align: center;
+            }
+        </style>
     <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INJA Foundation - Our Programs</title>
+    <title>INJA Foundation - Our Campaigns</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+      .campaign-img {
+        width: 100%;
+        max-width: 600px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        margin: 0 auto;
+        display: block;
+      }
+      .tree-img {
+        width: 100%;
+        max-width: 550px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        margin: 0 auto;
+        display: block;
+      }
+    </style>
+  
 </head>
 <body class="bg-gray-100 font-sans">
     <!-- Navigation -->
@@ -31,23 +80,22 @@
     <!-- Hero Section -->
     <section class="bg-green-100 py-16 text-center">
         <div class="container mx-auto">
-            <h2 class="text-4xl font-bold mb-4">Our Programs</h2>
+            <h2 class="text-4xl font-bold mb-4">Our Campaigns</h2>
             <p class="text-lg mb-6">Empowering communities through Health, Agriculture, and Environmental initiatives in Pune district.</p>
-            <img src="./media/image20.jpeg" alt="Poster with text and images of people" class="mx-auto mb-4 w-1/2">
-        </div>
+            </div>
     </section>
 
     <!-- Health Awareness Camps -->
     <section class="py-12">
         <div class="container mx-auto">
             <h3 class="text-3xl font-bold text-center mb-6">Health Awareness Camps</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="text-lg">
-                    <p class="mb-4">We organize health awareness programs, particularly for women in Chikhali, Pune, to promote community health and encourage responsibility for maintaining clean surroundings.</p>
-                    <p class="mb-4">Through various awareness sessions, we engage community members, especially women, to approach civic authorities and advocate for a healthier environment.</p>
-                </div>
-                <div>
-                    <img src="./media/image21.jpeg" alt="Group of people sitting on the ground" class="w-full rounded shadow">
+            <div class="flex flex-col items-center">
+                <img src="https://i.postimg.cc/fLTYgdPH/image.png" alt="Group of people sitting on the ground" class="campaign-img mb-6">
+                <div class="bg-white shadow-lg rounded-lg p-8 max-w-3xl mx-auto mb-6 border border-green-200">
+                    <div class="text-lg center-text max-w-2xl">
+                        <p class="mb-4">We organize health awareness programs, particularly for women in Chikhali, Pune, to promote community health and encourage responsibility for maintaining clean surroundings.</p>
+                        <p class="mb-4">Through various awareness sessions, we engage community members, especially women, to approach civic authorities and advocate for a healthier environment.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,14 +105,17 @@
     <section class="bg-gray-200 py-12">
         <div class="container mx-auto">
             <h3 class="text-3xl font-bold text-center mb-6">Free Health Checkup Camps</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                    <img src="./media/image22.jpeg" alt="Group of men lighting a candle" class="w-full rounded shadow">
+            <div class="flex flex-col items-center">
+                <div class="flex flex-col md:flex-row gap-6 mb-6 w-full justify-center">
+                    <img src="https://i.postimg.cc/g0Hbn2C3/image.png" alt="Group of men lighting a candle" class="campaign-img">
+                    <img src="https://i.postimg.cc/fyrKw1D6/image.png" alt="Group of men lighting a candle" class="campaign-img">
                 </div>
-                <div class="text-lg">
-                    <p class="mb-4">For the past three years, we have conducted free general health and eye checkup camps for the underprivileged in Pune, addressing neglected healthcare needs.</p>
-                    <p class="mb-4">We provide medical assistance, referral services, and display posters to raise awareness about various diseases, particularly in rural areas.</p>
-                    <p class="mb-4">Annually, we organize two distinct free health checkup and eye checkup camps to improve community health and quality of life.</p>
+                <div class="bg-white shadow-lg rounded-lg p-8 max-w-3xl mx-auto mb-6 border border-green-200">
+                    <div class="text-lg center-text max-w-2xl">
+                        <p class="mb-4">For the past three years, we have conducted free general health and eye checkup camps for the underprivileged in Pune, addressing neglected healthcare needs.</p>
+                        <p class="mb-4">We provide medical assistance, referral services, and display posters to raise awareness about various diseases, particularly in rural areas.</p>
+                        <p class="mb-4">Annually, we organize two distinct free health checkup and eye checkup camps to improve community health and quality of life.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,29 +125,32 @@
     <section class="py-12">
         <div class="container mx-auto">
             <h3 class="text-3xl font-bold text-center mb-6">Agriculture and Rural Development</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="text-lg">
-                    <p class="mb-4">Agriculture is the backbone of India’s economy, contributing 31% to the national GDP. We support rural communities by organizing regular training on organic farming.</p>
-                    <p class="mb-4">Our programs provide demonstrations and practical information on vermi-composting, empowering farmers to sustain their livelihoods through livestock production and dairying.</p>
-                </div>
-                <div>
-                    <img src="./media/image17.jpeg" alt="Group of people in a newspaper" class="w-full rounded shadow">
+            <div class="flex flex-col items-center">
+                <img src="https://i.postimg.cc/6QBZyRB9/image.png" alt="Group of people in a newspaper" class="campaign-img mb-6">
+                <div class="bg-white shadow-lg rounded-lg p-8 max-w-3xl mx-auto mb-6 border border-green-200">
+                    <div class="text-lg center-text max-w-2xl">
+                        <p class="mb-4">Agriculture is the backbone of India’s economy, contributing 31% to the national GDP. We support rural communities by organizing regular training on organic farming.</p>
+                        <p class="mb-4">Our programs provide demonstrations and practical information on vermi-composting, empowering farmers to sustain their livelihoods through livestock production and dairying.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Tree Plantation -->
-    <section class="bg-gray-200 py-12">
+    <section class="bg-gray-200 py-12" style="align-content: center;">
         <div class="container mx-auto">
             <h3 class="text-3xl font-bold text-center mb-6">Tree Plantation</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                    <img src="./media/image19.jpeg" alt="Page of a book" class="w-full rounded shadow">
+            <div class="flex flex-col items-center">
+                <div class="flex flex-col md:flex-row gap-6 mb-6 w-full justify-center">
+                    <img src="https://i.postimg.cc/fyxrg2Mm/image.png" alt="Page of a book" class="tree-img">
+                    <img src="https://i.postimg.cc/1tMgcPqq/image.png" alt="Page of a book" class="tree-img">
                 </div>
-                <div class="text-lg">
-                    <p class="mb-4">The primary objective of INJA Foundation is to plant trees in urban and rural areas to combat climate change and enhance biodiversity.</p>
-                    <p class="mb-4">Our tree plantation initiatives transform land parcels into biodiversity-rich urban forests, adding beauty and promoting wellness for residents.</p>
+                <div class="bg-white shadow-lg rounded-lg p-8 max-w-3xl mx-auto mb-6 border border-green-200">
+                    <div class="text-lg center-text max-w-2xl">
+                        <p class="mb-4">The primary objective of INJA Foundation is to plant trees in urban and rural areas to combat climate change and enhance biodiversity.</p>
+                        <p class="mb-4">Our tree plantation initiatives transform land parcels into biodiversity-rich urban forests, adding beauty and promoting wellness for residents.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,7 +159,7 @@
     <!-- Call to Action -->
     <section class="py-12 text-center">
         <div class="container mx-auto">
-            <h3 class="text-3xl font-bold mb-4">Support Our Programs</h3>
+            <h3 class="text-3xl font-bold mb-4">Support Our Campaigns</h3>
             <p class="text-lg mb-6">Join us in our mission to uplift communities through health, agriculture, and environmental initiatives. Volunteer or partner with us today!</p>
             <a href="contact.html" class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700">Get Involved</a>
         </div>
@@ -119,10 +173,9 @@
                 <div>
                     <h3 class="section-title text-lg font-semibold mb-4">Our Office</h3>
                     <p class="text-gray-400">
-                        123 Business Avenue<br>
-                        Suite 456, Downtown<br>
-                        City, State, 12345<br>
-                        United States
+                        Plot.No.12/27, D1 Block,<br>
+                        Chinchwad MIDC, Near Thermax chowk,<br>
+                        Pune-411019. 
                     </p>
                 </div>
 
@@ -130,10 +183,12 @@
                 <div>
                     <h3 class="section-title text-lg font-semibold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="/" class="text-gray-400 contact-link transition">Home</a></li>
-                        <li><a href="/about" class="text-gray-400 contact-link transition">About Us</a></li>
-                        <li><a href="/services" class="text-gray-400 contact-link transition">Services</a></li>
-                        <li><a href="/contact" class="text-gray-400 contact-link transition">Contact</a></li>
+                        <li><a href="index.html" class="text-gray-400 contact-link transition">Home</a></li>
+                        <li><a href="AboutUs.html" class="text-gray-400 contact-link transition">About Us</a></li>
+                        <li><a href="OurCampaigns.html" class="text-gray-400 contact-link transition">Our Campaigns</a></li>
+                        <li><a href="Programs.html" class="text-gray-400 contact-link transition">Our Programs</a></li>
+                        <li><a href="Partners.html" class="text-gray-400 contact-link transition">Partners</a></li>
+                        <li><a href="Contact.html" class="text-gray-400 contact-link transition">Contact Us</a></li>
                     </ul>
                 </div>
 
@@ -146,7 +201,7 @@
                     </p>
                     <p class="text-gray-400 mb-2">
                         <i class="fas fa-phone mr-2"></i>
-                        <a href="tel:+1234567890" class="contact-link">+1 (234) 567-890</a>
+                        <a href="+91 9768897871" class="contact-link">+91 9768897871</a>
                     </p>
                     <p class="text-gray-400">
                         <i class="fas fa-envelope mr-2"></i>
@@ -154,19 +209,13 @@
                     </p>
                     <!-- Social Media Icons -->
                     <div class="flex justify-left space-x-4 mt-4">
-                        <a href="https://facebook.com" class="text-white social-icon">
+                        <a href="https://www.facebook.com/share/1Apu6XPvSy/" class="text-white social-icon">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://twitter.com" class="text-white social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://instagram.com" class="text-white social-icon">
+                        <a href="https://www.instagram.com/injafoundation_7777?igsh=MXFneGt4aW02N2V0bQ%3D%3D&utm_source=qr" class="text-white social-icon">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://linkedin.com" class="text-white social-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
+                        </div>
                 </div>
             </div>
         </div>
