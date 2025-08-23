@@ -3,13 +3,25 @@
 <head>
         <style>
             .program-img {
-                width: 550px;
-                height: 300px;
+                width: 100%;
+                max-width: 550px;
+                height: auto;
+                aspect-ratio: 16/9;
                 object-fit: cover;
                 border-radius: 0.5rem;
                 box-shadow: 0 2px 8px rgba(0,0,0,0.15);
                 margin: 0 auto;
                 display: block;
+            }
+            @media (max-width: 1024px) {
+                .program-img {
+                    max-width: 400px;
+                }
+            }
+            @media (max-width: 768px) {
+                .program-img {
+                    max-width: 100%;
+                }
             }
         </style>
     <link rel="stylesheet" href="index.css">
@@ -24,11 +36,14 @@
     <!-- Navigation -->
     <nav class="bg-green-600 text-white p-4">
         <div class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-4">
-                <img src="https://i.postimg.cc/jSMW1z0d/image-removebg-preview.png" alt="INJA Foundation Logo" class="h-28 w-28" />
-                <h1 class="text-4xl font-bold">INJA Foundation</h1>
+            <div class="flex items-center gap-4 w-full">
+                <button id="menu-toggle" class="md:hidden mr-4 focus:outline-none">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
+                <img src="https://i.postimg.cc/wT4ZGZqL/inja.jpg" alt="INJA Foundation Logo" class="h-28 w-28" />
+                <h1 class="text-4xl font-bold flex-1 text-center md:text-left">INJA Foundation</h1>
             </div>
-            <ul class="flex space-x-4 ">
+            <ul id="nav-menu" class="hidden flex-col absolute top-24 left-4 bg-green-600 rounded-lg shadow-lg p-6 space-y-4 md:flex md:static md:flex-row md:space-x-4 md:bg-transparent md:shadow-none md:p-0 md:rounded-none">
                 <li><a href="index.html" class="hover:underline">Home</a></li>
                 <li><a href="AboutUs.html" class="hover:underline">About Us</a></li>
                 <li><a href="OurCampaigns.html" class="hover:underline">Our Campaigns</a></li>
@@ -37,6 +52,13 @@
                 <li><a href="Contact.html" class="hover:underline">Contact Us</a></li>
             </ul>
         </div>
+        <script>
+            const menuToggle = document.getElementById('menu-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('hidden');
+            });
+        </script>
     </nav>
 
     <!-- Hero Section -->
@@ -107,7 +129,7 @@
                     <h3 class="section-title text-lg font-semibold mb-4">Contact Us</h3>
                     <p class="text-gray-400 mb-2">
                         <i class="fab fa-whatsapp mr-2"></i>
-                        <a href="https://wa.me/1234567890" class="contact-link">+1 (234) 567-890</a>
+                        <a href="https://wa.me/+91 9768897871" class="contact-link">+91 9768897871</a>
                     </p>
                     <p class="text-gray-400 mb-2">
                         <i class="fas fa-phone mr-2"></i>
@@ -115,7 +137,7 @@
                     </p>
                     <p class="text-gray-400">
                         <i class="fas fa-envelope mr-2"></i>
-                        <a href="mailto:info@example.com" class="contact-link">info@example.com</a>
+                        <a href="mailto:Injafoundation@gmail.com" class="contact-link">Injafoundation@gmail.com</a>
                     </p>
                     <!-- Social Media Icons -->
                     <div class="flex space-x-4 mt-4">
